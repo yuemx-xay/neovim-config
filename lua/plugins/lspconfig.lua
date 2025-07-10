@@ -1,7 +1,7 @@
 local servers = {
-  bashls = {},
-  protols = {},
-  pyright = {},
+  --bashls = {},
+  --protols = {},
+  --pyright = {},
   nginx_language_server = {
     capabilities = {
       offsetEncoding = { "utf-16" },
@@ -63,8 +63,8 @@ local mason_extra_tools = {
   "goimports",
   "shfmt",
   "taplo",
-  "prettier",
-  "sql-formatter",
+  --"prettier",
+  --"sql-formatter",
   "jq",
   "yapf",
 

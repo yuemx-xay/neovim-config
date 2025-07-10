@@ -95,6 +95,28 @@ return {
     "ellisonleao/gruvbox.nvim",
   },
   {
+    "navarasu/onedark.nvim",
+    priority = 1000,
+    config = function()
+      require("onedark").setup({
+        --style = "darker",
+        style = "warmer",
+        colors = {
+          --bright_orange = "#ff8800",
+          green = "#309d0e",
+          --yellow = "#fadd1f"
+          dark_yellow = "#908b25"
+        },
+        highlights = {
+          ["@keyword"] = {fg = "$green"},
+          ["@function.macro"] = {fg = "$dark_yellow"}
+          --["@lsp.type.variable"] = {fg = "$yellow"}
+        },
+      })
+      require('onedark').load()
+    end,
+  },
+  {
     "neanias/everforest-nvim",
     version = false,
     lazy = false,

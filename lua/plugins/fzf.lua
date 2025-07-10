@@ -86,7 +86,7 @@ local M = {
     {
       "gi",
       function()
-        require("fzf-lua").lsp_implementations({ ignore_current_line = true })
+        require("fzf-lua").lsp_implementations()
       end,
       desc = "Go to implementations",
     },

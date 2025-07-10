@@ -47,7 +47,7 @@ function utils.ToggleInlayHints()
 end
 
 function utils.GetColorshemeFromENV()
-  local scheme = "tokyonight"
+  local scheme = "onedark"
   local fromENV = os.getenv("NVIM_COLOR")
   if fromENV ~= nil then
     scheme = fromENV

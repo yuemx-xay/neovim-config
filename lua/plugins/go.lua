@@ -43,15 +43,7 @@ local M = {
       },
       lsp_keymaps = false,
       comment_placeholder = "  ",
-      golangci_lint = {
-        default = "fast", -- set to one of { 'standard', 'fast', 'all', 'none' }
-      },
-      diagnostic = { -- set diagnostic to false to disable diagnostic
-        update_in_insert = true,
-        signs = {
-          text = { "🚑", "🔧", "🪛", "🧹" },
-        },
-      },
+      diagnostic = false, -- set diagnostic to false to disable diagnostic
     })
     -- auto load .env file in project dir
     setEnvFromFile()

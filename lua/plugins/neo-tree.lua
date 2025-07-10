@@ -33,6 +33,20 @@ return {
           hide_gitignored = false,
           hide_by_name = {
             ".git",
+            ".cache",
+            "cmake-build-debug",
+            "compile_commands.json",
+
+          },
+          hide_by_pattern = {
+            "*.o",
+            "*.mod.o",
+            "*.mod",
+            "*.ko",
+            "*.mod.c",
+            "*.order",
+            "*.symvers",
+            "*.cmd",
           },
         },
       },
