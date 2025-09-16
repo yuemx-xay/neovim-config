@@ -41,7 +41,6 @@ return {
           hide_by_pattern = {
             "*.o",
             "*.mod.o",
-            "*.mod",
             "*.ko",
             "*.mod.c",
             "*.order",

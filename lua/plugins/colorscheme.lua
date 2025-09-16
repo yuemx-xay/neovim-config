@@ -100,21 +100,47 @@ return {
     config = function()
       require("onedark").setup({
         --style = "darker",
+        --style = "deep",
         style = "warmer",
         colors = {
-          --bright_orange = "#ff8800",
+          bright_orange = "#ff8800",
           green = "#309d0e",
-          --yellow = "#fadd1f"
-          dark_yellow = "#908b25"
+          --yellow = "#fadd1f",
+          --dark_yellow = "#908b25",
+          variable_color = "#43DB2C",
         },
         highlights = {
-          ["@keyword"] = {fg = "$green"},
-          ["@function.macro"] = {fg = "$dark_yellow"}
-          --["@lsp.type.variable"] = {fg = "$yellow"}
+          ["@keyword"] = { fg = "$green" },
+          --["@function.macro"] = {fg = "$dark_yellow"},
+          --["@lsp.type.typeParameter"] = {fg = "$bright_orange"},
+          --["@lsp.type.variable"] = {fg = "$variable_color"},
         },
       })
-      require('onedark').load()
+      require("onedark").load()
     end,
+  },
+  {
+    "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, 
+    priority = 1000, -- Ensure it loads first
+    config = function ()
+      --require("vim-moon").setup({
+
+      --})
+      
+    end
+  },
+  {
+    "EdenEast/nightfox.nvim",
+    priority = 1000,
+    lazy = false,
+    config = function ()
+      require("nightfox").setup({
+        operators = {
+          transparent = false
+        },
+      })
+      vim.cmd("colorscheme carbonfox")
+    end
   },
   {
     "neanias/everforest-nvim",
