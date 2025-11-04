@@ -7,6 +7,17 @@ local servers = {
       offsetEncoding = { "utf-16" },
     },
   },
+  pyright = {
+    settings = {
+      python = {
+        analysis = {
+          typeCheckingMode = "basic",
+          autoSearchPaths = true,
+          useLibraryCodeForTypes = true,
+        },
+      },
+    },
+  },
   clangd = {
     filetypes = { "c", "cpp" },
     cmd = {
